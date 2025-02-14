@@ -62,9 +62,10 @@ while (num <= 5) {
 console.log(soma);
 
 //Exercício2
+const prompt = require("prompt-sync")();
 let opcao;
 
-do {
+while (opcao !== "S") {
 
     console.log("Menu:");
     console.log("A. Opção A");
@@ -87,6 +88,4 @@ do {
             console.log("Opção inválida. Tente novamente.");
             break;
     }
-} while (opcao !== "S");
-//desisto essa bomba nao roda de jeito nenhum aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-
+}
