@@ -33,4 +33,59 @@ if (valorIndefinido === null) {
     console.log("valorIndefinido tem um valor diferente de null e undefined");
 }
 
-//Exercício3
+//Estruturas de Controle 
+//Exercício1
+//1
+let numero = 5
+
+if (numero == 0) {
+    console.log("o número é 0");
+} else if (numero > 0) {
+    console.log("o número é positivo");
+} else if (numero < 0) {
+    console.log("O número é negativo");
+}
+
+//2
+for (let i = 0; i < 11; i++) {
+    console.log("Contador:", i);
+}
+
+//3
+let num = 1;
+let soma = 0;
+
+while (num <= 5) {
+    soma += num;
+    num++;
+}
+console.log(soma);
+
+//Exercício2
+let opcao;
+
+do {
+
+    console.log("Menu:");
+    console.log("A. Opção A");
+    console.log("B. Opção B");
+    console.log("S. Sair");
+
+    opcao = prompt("Digite a opção desejada (A, B ou S para sair):").toUpperCase();
+
+    switch(opcao) {
+        case "A":
+            console.log("Você escolheu a opção A.");
+            break;
+        case "B":
+            console.log("Você escolheu a opção B.");
+            break;
+        case "S":
+            console.log("Saindo...");
+            break;
+        default:
+            console.log("Opção inválida. Tente novamente.");
+            break;
+    }
+} while (opcao !== "S");
+//desisto essa bomba nao roda de jeito nenhum aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
